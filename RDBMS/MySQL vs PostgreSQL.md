@@ -13,7 +13,7 @@
 |**Access Methods** | All standards | All standards |
 | **Regular expression** | Yes. Before MySQL 8, regular expressions were supported via the Henry Spencer regular expression library. Starting with MySQL 8, regular expression support has been reimplemented using International Components for Unicode (ICU), which provides full Unicode support and is multibyte safe. | Yes. There are three separate approaches to pattern matching provided by PostgreSQL. LIKE operator, the more recent SIMILAR TO operator (added in SQL:1999), and POSIX-style regular expressions. |
 | **Extensible Type System** | Some support. For example we can add new functions. | Some support. It is possible to add new types, new functions, new index types, etc. |
-| **Connection Management** | Starting with MySQL 8, MySQL Server now permits a TCP/IP port to be configured specifically for administrative connections. |  PostgreSQL has native support for using SSL connections to encrypt client/server communications for increased security. This requires that OpenSSL is installed on both client and server systems. |
+| **Connection Management** | Starting with MySQL 8, MySQL Server now permits a TCP/IP port to be configured specifically for administrative connections. |  Yes |
 |   |   |   |
 |   |   |   |
 |   |   |   |
