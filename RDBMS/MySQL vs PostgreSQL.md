@@ -6,9 +6,14 @@
 | **CTEs**  | Starting with MySQL 8 it supports Common Table Expressions , both nonrecursive and recursive.  | Yes |
 | **Window Functions**  | Starting with MySQL 8 it supports window functions that, for each row from a query, perform a calculation using rows related to that row.  | Yes |
 | **Materialised View**  |  Is missing natively in MySQL, but it could be developed easily with SQL logic. | Yes. To create a materialized view, you use the CREATE MATERIALIZED VIEW. |
+| **Temporary Tables** | Yes | Yes |
 | **JSON Support** | Yes. Improved in MySQL 8. | Yes |
 | **Full-text Search** | Yes | Yes |
 | **GIS/SRS** | Geospatial data support is built in. Improved in MySQL 8. | PostgreSQL supports Geospatial data via the PostGIS extension. Easy to use for developers. |
 |**Access Methods** | All standards | All standards |
+| **Regular expression** | Yes. Starting with MySQL 8, regular expression support has been reimplemented using International Components for Unicode (ICU), which provides full Unicode support and is multibyte safe. | Yes. There are three separate approaches to pattern matching provided by PostgreSQL. LIKE operator, the more recent SIMILAR TO operator (added in SQL:1999), and POSIX-style regular expressions. |
+|   |   |   |
+|   |   |   |
+|   |   |   |
 |   |   |   |
 |   |   |   |
