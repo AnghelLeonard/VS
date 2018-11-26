@@ -1,1 +1,7 @@
-
+| Features | MySQL | PostgreSQL |
+|---|---|---|
+| License---|
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
