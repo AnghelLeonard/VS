@@ -8,7 +8,7 @@
 | **Materialised View**  |  Is missing natively in MySQL, but it could be developed easily with SQL logic. | Yes. To create a materialized view, you use the CREATE MATERIALIZED VIEW. |
 | **JSON Support** | Yes. Improved in MySQL 8. | Yes |
 | **Full-text Search** | Yes | Yes |
-|   |   |   |
-|   |   |   |
+| **GIS/SRS** | Geospatial data support is built in. Improved in MySQL 8. | PostgreSQL supports Geospatial data via the PostGIS extension. Easy to use for developers. |
+|**Access Methods** | All standards | All standards |
 |   |   |   |
 |   |   |   |
