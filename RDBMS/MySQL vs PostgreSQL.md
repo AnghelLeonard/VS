@@ -6,8 +6,8 @@
 | **CTEs**  | Starting with MySQL 8 it supports Common Table Expressions , both nonrecursive and recursive.  | Yes |
 | **Window Functions**  | Starting with MySQL 8 it supports window functions that, for each row from a query, perform a calculation using rows related to that row.  | Yes |
 | **Materialised View**  |  Is missing natively in MySQL, but it could be developed easily with SQL logic. | Yes. To create a materialized view, you use the CREATE MATERIALIZED VIEW. |
-|   |   |   |
-|   |   |   |
+| **JSON Support** | Yes. Improved in MySQL 8. | Yes |
+| **Full-text Search** | Yes | Yes |
 |   |   |   |
 |   |   |   |
 |   |   |   |
