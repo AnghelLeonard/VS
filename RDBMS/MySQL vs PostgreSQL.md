@@ -1,6 +1,6 @@
 | Features | MySQL | PostgreSQL |
 |---|---|---|
-|License | Open source, but owned by Oracle and offers commercial versions | Open source |
+| **License** | Open source and comercial versions via Oracle | Completely open source |
 |   |   |   |
 |   |   |   |
 |   |   |   |
