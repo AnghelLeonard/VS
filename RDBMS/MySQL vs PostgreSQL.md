@@ -17,7 +17,7 @@
 | **Extensible Type System** | Some support. For example we can add new functions. | Some support. It is possible to add new types, new functions, new index types, etc. |
 | **Connection Management** | Starting with MySQL 8, MySQL Server now permits a TCP/IP port to be configured specifically for administrative connections. |  Does not support a dedicated port. |
 | **Security** | In some previous versions, MySQL distribution must be built with SSL support(e.g., MySQL 5.5). In MySQL 8, it supports encrypted connections using the TLSv1, TLSv1.1, and TLSv1.2 protocols. | SSL support |
-|   |   |   |
+| **Garbage Collection** |   |   |
 |   |   |   |
 |   |   |   |
 |   |   |   |
