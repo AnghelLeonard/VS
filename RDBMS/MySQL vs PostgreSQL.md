@@ -1,7 +1,7 @@
 | Features | MySQL | PostgreSQL |
 |---|---|---|
 | **License** | Open source and comercial versions via Oracle | Completely open source |
-| **ACID**  | ACID compliant  | So previous version may not follow ACID , but today it is. InnoDB and NDB Cluster Storage engines that adhere closely to the ACID model |
+| **ACID**  | Fully ACID compliant  | MySQL is partially ACID compliant. Previous version may not follow ACID. InnoDB and NDB Cluster Storage engines adhere closely to the ACID model |
 |   |   |   |
 |   |   |   |
 |   |   |   |
