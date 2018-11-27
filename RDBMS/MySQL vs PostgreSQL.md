@@ -21,7 +21,7 @@
 | **Security** | In some previous versions, MySQL distribution must be built with SSL support(e.g., MySQL 5.5). In MySQL 8, it supports encrypted connections using the TLSv1, TLSv1.1, and TLSv1.2 protocols. | SSL support |
 | **Garbage Collection** | Purge Threads. Runs with dedicated threads inside the separate rollback segment. It doesn't affect the read concurrency in any way. | Auto-vacuum Processes. Is very costly as it works in the main heap area.  Gives you pause at random as the Java GC. |
 | **Table Structure** | Clustered Index (preferable to have, lookup by PK trigger a single I/O). Rows are directly embedded inside the B-tree structure of its primary key. For large amount of memory, both clustered and non-clustered are ok. | Heap (non-clustered, lookup by PK trigger at least two I/O, not FK and joins friendly). Regular table structure filled with data rows separately from indexes. For large amount of memory, both clustered and non-clustered are ok. |
-|   |   |   |
+| **IndexingI**  | Most MySQL indexes (PRIMARY KEY, UNIQUE, INDEX, and FULLTEXT) are stored in B-trees. Exceptions: Indexes on spatial data types use R-trees; MEMORY tables also support hash indexes; InnoDB uses inverted lists for FULLTEXT indexes. | PostgreSQL provides several index types: B-tree, Hash, GiST, SP-GiST, GIN and BRIN. Each index type uses a different algorithm that is best suited to different types of queries. By default, the CREATE INDEX command creates B-tree indexes, which fit the most common situations. |
 |   |   |   |
 |   |   |   |
 |   |   |   |
