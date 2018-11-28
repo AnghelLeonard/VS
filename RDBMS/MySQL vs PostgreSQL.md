@@ -3,11 +3,13 @@
 | **License** | Open source and comercial versions via Oracle | Completely open source |
 | **Clients** | GitHub, US Navy, NASA, Tesla, Netflix, WeChat, Facebook, Zendesk, Twitter, Zappos, YouTube, Spotify | Apple, BioPharm, Etsy, IMDB, Macworld, Debian, Fujitsu, Red Hat, Sun Microsystem, Cisco, Skype |
 | **Ecosystem** | MySQL has a vigorous ecosystem with variants such as MariaDB, Percona, Galera, etc. as well as storage engines other than InnoDB, but that can also be overwhelming and confusing. | PostgreSQL has had limited high-end options, but that will change with new features introduced with the latest version. |
+| **MVCC** | Yes | Yes |
 | **Governance** | Oracle | PostgreSQL has a solid history of working governance and collaborative community. |
 | **Architectural**  | Single process | Multi process |
 | **Concurrency** | Multi Thread (default stack size of a thread is at 256KB on 64-bit platforms) | Fork approach. Postgres forks off a child process to establish a connection, it can take up to 10 MB per connection. Pay attention to this if you need a lot of connections, 1000+) |
 | **ACID Compliance**  | MySQL is partially ACID compliant. Previous version may not follow ACID. InnoDB and NDB Cluster Storage engines adhere closely to the ACID model. | Fully ACID compliant |
 | **SQL Compliance**  | MySQL is partially compliant on some of the versions. PostgreSQL queries are, in most cases, exactly the same as MySQL queries. | Largely SQL compliant. MySQL queries are, in most cases, exactly the same as PostgreSQL queries. |
+| **UPDATEs** | In-Place / Rollback Segments | Append Only / HOT. It was another reason why Uber switched away from PostgreSQL. |
 | **CTEs**  | Starting with MySQL 8 it supports Common Table Expressions , both nonrecursive and recursive.  | Yes |
 | **Window Functions**  | Starting with MySQL 8 it supports window functions that, for each row from a query, perform a calculation using rows related to that row.  | Yes |
 | **Materialised View**  |  Is missing natively in MySQL, but it could be developed easily with SQL logic. | Yes. To create a materialized view, you use the CREATE MATERIALIZED VIEW. |
