@@ -30,7 +30,7 @@
 | **Semi-synchronous Replication** | Yes | Yes. Added in PostgreSQL 10. |
 | **Declarative Partitioning** | Yes | Yes. Added in PostgreSQL 10. |
 | **Page Compression** | Transparent. Both Postgres and MySQL have page-based physical storage. (8KB vs 16KB). MySQL has a sophisticated feature called Transparent Page Compression. It is specifically designed to work better with SSDs, where write volume is directly correlated to the device's lifetime. Compression on MySQL works not only on off-page large objects, but on all pages. It does that by using hole punching in a sparse file, which is supported by modern filesystems such as ext4 or btrfs. | Both Postgres and MySQL have page-based physical storage. (8KB vs 16KB). Postgres uses TOAST, a dedicated shadow table storage. The large object is pulled out when and only when the row and column is selected. In other words, a large chunk of black box won't pollute your precious cache memory. It also supports compression on the TOASTed objects. |
-|   |   |   |
+| **Transaction Log** | REDO Log (WAL). MySQL maintains two separate logs: 1. InnoDB-specific redo logs for crash recovery, and 2. binary log for replication and incremental backup. | WAL. Postgres has a single source of truth for transaction history called Write Ahead Log (WAL). |
 |   |   |   |
 |   |   |   |
 
