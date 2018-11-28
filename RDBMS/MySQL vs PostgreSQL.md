@@ -8,7 +8,7 @@ MySQL works best for online transactions, and PostgreSQL works best for append o
 | **License** | Open source and comercial versions via Oracle | Completely open source |
 | **Clients** | GitHub, US Navy, NASA, Tesla, Netflix, WeChat, Facebook, Zendesk, Twitter, Zappos, YouTube, Spotify | Apple, BioPharm, Etsy, IMDB, Macworld, Debian, Fujitsu, Red Hat, Sun Microsystem, Cisco, Skype |
 | **Ecosystem** | MySQL has a vigorous ecosystem with variants such as MariaDB, Percona, Galera, etc. as well as storage engines other than InnoDB, but that can also be overwhelming and confusing. | PostgreSQL has had limited high-end options, but that will change with new features introduced with the latest version. |
-| ** Tool/Editing ** | MySQL Workbench | pgAdmin |
+| **Tool/Editing** | MySQL Workbench | pgAdmin |
 | **MVCC** | Yes | Yes |
 | **Governance** | Oracle | PostgreSQL has a solid history of working governance and collaborative community. |
 | **Architectural**  | Single process | Multi process |
