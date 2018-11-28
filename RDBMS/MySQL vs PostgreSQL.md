@@ -29,7 +29,7 @@
 | **Logical replication** | Yes | Yes. Added in PostgreSQL 10. Thanks to logical replication, zero downtime upgrade is possible by creating a replica with a newer version of Postgres and switching over to it. Truncating a stale partition in a huge time-series event table is much easier, too. |
 | **Semi-synchronous Replication** | Yes | Yes. Added in PostgreSQL 10. |
 | **Declarative Partitioning** | Yes | Yes. Added in PostgreSQL 10. |
-|   |   |   |
+| **Page Compression** | Transparent. Both Postgres and MySQL have page-based physical storage. (8KB vs 16KB). MySQL has a sophisticated feature called Transparent Page Compression. It is specifically designed to work better with SSDs, where write volume is directly correlated to the device's lifetime. Compression on MySQL works not only on off-page large objects, but on all pages. It does that by using hole punching in a sparse file, which is supported by modern filesystems such as ext4 or btrfs. | Both Postgres and MySQL have page-based physical storage. (8KB vs 16KB). Postgres uses TOAST, a dedicated shadow table storage. The large object is pulled out when and only when the row and column is selected. In other words, a large chunk of black box won't pollute your precious cache memory. It also supports compression on the TOASTed objects. |
 |   |   |   |
 |   |   |   |
 |   |   |   |
