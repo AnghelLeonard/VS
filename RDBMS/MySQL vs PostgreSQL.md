@@ -19,7 +19,7 @@ MySQL works best for online transactions, and PostgreSQL works best for append o
 | **Window Functions**  | Starting with MySQL 8 it supports window functions that, for each row from a query, perform a calculation using rows related to that row.  | Yes |
 | **Materialized View**  |  Is missing natively in MySQL, but it could be developed easily with SQL logic. | Yes. To create a materialized view, you use the CREATE MATERIALIZED VIEW. |
 | **Temporary Tables** | Yes | Yes |
-| **JSON Support** | Yes. Improved in MySQL 8. | Yes |
+| **JSON Support** | Yes. JSON Data type. Improved in MySQL 8. | Yes. JSON Data type. |
 | **Full-text Search** | Yes | Yes |
 | **GIS/SRS** | Geospatial data support is built in. Improved in MySQL 8. | PostgreSQL supports Geospatial data via the PostGIS extension. Easy to use for developers. |
 | **NoSQL** |  MySQL (5.7+) support some NoSQL features and constantly add more | PostgreSQL supports many NoSQL features |
