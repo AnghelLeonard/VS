@@ -9,3 +9,6 @@
 | **Temporal Log-based rollback** | No | In development for MariaDB Server 10.3 |
 | **Temporal System versioned tables** | No | In development for MariaDB Server 10.3 |
 | **Official client connectors** | C (libmysqlclient), Java, ODBC, .NET, Node.js, Python, C++, mysqlnd for PHP | C (libmariadbclient), Java, ODBC |
+| **Security – Password authentication** | sha256_password (with caching_sha2_password in 8.0) | ed25519 (incompatible with sha256_password) |
+
+https://www.percona.com/blog/2017/11/02/mysql-vs-mariadb-reality-check/
