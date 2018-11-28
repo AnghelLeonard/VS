@@ -1,5 +1,5 @@
 **Usage / General Perception**\
-MySQL works best for online transactions, and PostgreSQL works best for append only, analytical processes such as data warehousing. PostgreSQL is widely used in large systems where read and write speeds are crucial and data needs to validated. PostgreSQL performs well in OLTP/OLAP systems when read/write speeds are required and extensive data analysis is needed. MySQL is a widely chosen for web based projects that need a database simply for straightforward data transactions. MySQL may under perform when strained by heavy loads.
+*MySQL works best for online transactions, and PostgreSQL works best for append only, analytical processes such as data warehousing. PostgreSQL is widely used in large systems where read and write speeds are crucial and data needs to validated. PostgreSQL performs well in OLTP/OLAP systems when read/write speeds are required and extensive data analysis is needed. MySQL is a widely chosen for web based projects that need a database simply for straightforward data transactions. MySQL may under perform when strained by heavy loads.*
 
 | Features | MySQL | PostgreSQL |
 |---|---|---|
@@ -15,7 +15,7 @@ MySQL works best for online transactions, and PostgreSQL works best for append o
 | **UPDATEs** | In-Place / Rollback Segments | Append Only / HOT. It was another reason why Uber switched away from PostgreSQL. |
 | **CTEs**  | Starting with MySQL 8 it supports Common Table Expressions , both nonrecursive and recursive.  | Yes |
 | **Window Functions**  | Starting with MySQL 8 it supports window functions that, for each row from a query, perform a calculation using rows related to that row.  | Yes |
-| **Materialised View**  |  Is missing natively in MySQL, but it could be developed easily with SQL logic. | Yes. To create a materialized view, you use the CREATE MATERIALIZED VIEW. |
+| **Materialized View**  |  Is missing natively in MySQL, but it could be developed easily with SQL logic. | Yes. To create a materialized view, you use the CREATE MATERIALIZED VIEW. |
 | **Temporary Tables** | Yes | Yes |
 | **JSON Support** | Yes. Improved in MySQL 8. | Yes |
 | **Full-text Search** | Yes | Yes |
