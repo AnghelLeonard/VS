@@ -1,5 +1,6 @@
 **Usage / General Perception**\
-*MySQL works best for online transactions, and PostgreSQL works best for append only, analytical processes such as data warehousing. PostgreSQL is widely used in large systems where read and write speeds are crucial and data needs to validated. PostgreSQL performs well in OLTP/OLAP systems when read/write speeds are required and extensive data analysis is needed. MySQL is a widely chosen for web based projects that need a database simply for straightforward data transactions. MySQL may under perform when strained by heavy loads.*
+*Kenn Ejima: "My general recommendation is that if you want to build a consumer oriented app that aims to scale over millions of active users, MySQL might be a better choice. Otherwise, PostgreSQL is better especially if you don’t have experience with MySQL before."\
+MySQL works best for online transactions, and PostgreSQL works best for append only, analytical processes such as data warehousing. PostgreSQL is widely used in large systems where read and write speeds are crucial and data needs to validated. PostgreSQL performs well in OLTP/OLAP systems when read/write speeds are required and extensive data analysis is needed. MySQL is a widely chosen for web based projects that need a database simply for straightforward data transactions. MySQL may under perform when strained by heavy loads.*
 
 | Features | MySQL | PostgreSQL |
 |---|---|---|
@@ -37,6 +38,9 @@
 | **Declarative Partitioning** | Yes | Yes. Added in PostgreSQL 10. |
 | **Page Compression** | Transparent. Both Postgres and MySQL have page-based physical storage. (8KB vs 16KB). MySQL has a sophisticated feature called Transparent Page Compression. It is specifically designed to work better with SSDs, where write volume is directly correlated to the device's lifetime. Compression on MySQL works not only on off-page large objects, but on all pages. It does that by using hole punching in a sparse file, which is supported by modern filesystems such as ext4 or btrfs. | Both Postgres and MySQL have page-based physical storage. (8KB vs 16KB). Postgres uses TOAST, a dedicated shadow table storage. The large object is pulled out when and only when the row and column is selected. In other words, a large chunk of black box won't pollute your precious cache memory. It also supports compression on the TOASTed objects. |
 | **Transaction Log** | REDO Log (WAL). MySQL maintains two separate logs: 1. InnoDB-specific redo logs for crash recovery, and 2. binary log for replication and incremental backup. | WAL. Postgres has a single source of truth for transaction history called Write Ahead Log (WAL). |
-|   |   |   |
-|   |   |   |
 
+**References and must read:**\
+https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL-With-respect-to-reliability-speed-scalability-and-features
+https://www.quora.com/What-is-the-difference-between-Postgressql-and-MySQL
+http://blog.dumper.io/showdown-mysql-8-vs-postgresql-10/
+https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/
