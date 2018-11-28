@@ -1,5 +1,6 @@
 **Usage / General Perception**\
 *Kenn Ejima: "My general recommendation is that if you want to build a consumer oriented app that aims to scale over millions of active users, MySQL might be a better choice. Otherwise, PostgreSQL is better especially if you don’t have experience with MySQL before."\
+\
 MySQL works best for online transactions, and PostgreSQL works best for append only, analytical processes such as data warehousing. PostgreSQL is widely used in large systems where read and write speeds are crucial and data needs to validated. PostgreSQL performs well in OLTP/OLAP systems when read/write speeds are required and extensive data analysis is needed. MySQL is a widely chosen for web based projects that need a database simply for straightforward data transactions. MySQL may under perform when strained by heavy loads.*
 
 | Features | MySQL | PostgreSQL |
@@ -40,7 +41,7 @@ MySQL works best for online transactions, and PostgreSQL works best for append o
 | **Transaction Log** | REDO Log (WAL). MySQL maintains two separate logs: 1. InnoDB-specific redo logs for crash recovery, and 2. binary log for replication and incremental backup. | WAL. Postgres has a single source of truth for transaction history called Write Ahead Log (WAL). |
 
 **References and must read:**\
-https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL-With-respect-to-reliability-speed-scalability-and-features
-https://www.quora.com/What-is-the-difference-between-Postgressql-and-MySQL
-http://blog.dumper.io/showdown-mysql-8-vs-postgresql-10/
+https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL-With-respect-to-reliability-speed-scalability-and-features\
+https://www.quora.com/What-is-the-difference-between-Postgressql-and-MySQL\
+http://blog.dumper.io/showdown-mysql-8-vs-postgresql-10/\
 https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/
