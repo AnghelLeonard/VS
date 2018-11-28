@@ -1,4 +1,4 @@
-**Usage / General Perception**
+**Usage / General Perception**/
 MySQL works best for online transactions, and PostgreSQL works best for append only, analytical processes such as data warehousing. PostgreSQL is widely used in large systems where read and write speeds are crucial and data needs to validated. PostgreSQL performs well in OLTP/OLAP systems when read/write speeds are required and extensive data analysis is needed. MySQL is a widely chosen for web based projects that need a database simply for straightforward data transactions. MySQL may under perform when strained by heavy loads.
 
 | Features | MySQL | PostgreSQL |
