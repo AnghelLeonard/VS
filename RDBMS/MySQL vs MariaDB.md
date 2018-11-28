@@ -2,3 +2,4 @@
 |---|---|---|
 | **License** | Open source and comercial versions via Oracle	| Completely open source |
 | **Tool/Editing** | MySQL Workbench | Webyog’s SQLYog for Microsoft Windows (MySQL Workbench notes an incompatible server) |
+| **Core Replication** | MySQL replication with GTID | MariaDB Server replication, with own GTID, compatible only if MariaDB Server is a slave to MySQL, not vice versa |
