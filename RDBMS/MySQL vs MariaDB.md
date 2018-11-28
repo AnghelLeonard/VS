@@ -8,3 +8,4 @@
 | **Core Partitioning** | Standard | Standard, with extra engines like SPIDER/CONNECT that offer varying levels of support |
 | **Temporal Log-based rollback** | No | In development for MariaDB Server 10.3 |
 | **Temporal System versioned tables** | No | In development for MariaDB Server 10.3 |
+| **Official client connectors** | C (libmysqlclient), Java, ODBC, .NET, Node.js, Python, C++, mysqlnd for PHP | C (libmariadbclient), Java, ODBC |
