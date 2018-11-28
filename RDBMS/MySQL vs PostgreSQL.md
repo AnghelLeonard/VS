@@ -41,7 +41,7 @@ MySQL works best for online transactions, and PostgreSQL works best for append o
 | **Transaction Log** | REDO Log (WAL). MySQL maintains two separate logs: 1. InnoDB-specific redo logs for crash recovery, and 2. binary log for replication and incremental backup. | WAL. Postgres has a single source of truth for transaction history called Write Ahead Log (WAL). |
 
 **References and must read:**\
-![](https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL-With-respect-to-reliability-speed-scalability-and-features)
-![](https://www.quora.com/What-is-the-difference-between-Postgressql-and-MySQL)
-![](http://blog.dumper.io/showdown-mysql-8-vs-postgresql-10/)
-![](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql)
+![https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL-With-respect-to-reliability-speed-scalability-and-features](https://www.quora.com/What-are-pros-and-cons-of-PostgreSQL-and-MySQL-With-respect-to-reliability-speed-scalability-and-features)\
+![https://www.quora.com/What-is-the-difference-between-Postgressql-and-MySQL](https://www.quora.com/What-is-the-difference-between-Postgressql-and-MySQL)\
+![http://blog.dumper.io/showdown-mysql-8-vs-postgresql-10/](http://blog.dumper.io/showdown-mysql-8-vs-postgresql-10/)\
+![https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql)
