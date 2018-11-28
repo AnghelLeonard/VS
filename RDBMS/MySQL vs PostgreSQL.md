@@ -3,11 +3,12 @@
 \
 MySQL works best for online transactions, and PostgreSQL works best for append only, analytical processes such as data warehousing. PostgreSQL is widely used in large systems where read and write speeds are crucial and data needs to validated. PostgreSQL performs well in OLTP/OLAP systems when read/write speeds are required and extensive data analysis is needed. MySQL is a widely chosen for web based projects that need a database simply for straightforward data transactions. MySQL may under perform when strained by heavy loads.*
 
-| Features | MySQL | PostgreSQL |
+| Features | MySQL | PostgreSQL | 
 |---|---|---|
 | **License** | Open source and comercial versions via Oracle | Completely open source |
 | **Clients** | GitHub, US Navy, NASA, Tesla, Netflix, WeChat, Facebook, Zendesk, Twitter, Zappos, YouTube, Spotify | Apple, BioPharm, Etsy, IMDB, Macworld, Debian, Fujitsu, Red Hat, Sun Microsystem, Cisco, Skype |
 | **Ecosystem** | MySQL has a vigorous ecosystem with variants such as MariaDB, Percona, Galera, etc. as well as storage engines other than InnoDB, but that can also be overwhelming and confusing. | PostgreSQL has had limited high-end options, but that will change with new features introduced with the latest version. |
+| ** Tool/Editing ** | MySQL Workbench | pgAdmin |
 | **MVCC** | Yes | Yes |
 | **Governance** | Oracle | PostgreSQL has a solid history of working governance and collaborative community. |
 | **Architectural**  | Single process | Multi process |
